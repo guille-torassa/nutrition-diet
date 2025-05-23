@@ -1,0 +1,126 @@
+
+/* Reset básico */
+body, h1, h4, p, ul, li, table, th, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Header amarillo con imagen centrada */
+header {
+  background-color: #f6f665;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+header img {
+  height: 80px;
+}
+
+/* Subfranja con texto negro */
+p {
+  background-color: #efffa5;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin: 0;
+  position: relative;
+}
+
+nav img {
+  height: 30px;
+  margin: 0.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efffa5;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Artículo y sección */
+article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+article img {
+  max-width: 150px;
+}
+
+article section {
+  flex: 1;
+}
+
+/* Aside */
+aside {
+  background-color: #fff;
+  padding: 1rem;
+  border-left: 5px solid #f6f665;
+}
+
+aside h4 {
+  margin-bottom: 0.5rem;
+}
+
+aside ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #f6f665;
+  font-weight: bold;
+}
