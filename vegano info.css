@@ -1,50 +1,45 @@
-
-/* Reset básico */
-body, h1, h3, h4, p, ul, li, table, th, td {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #000;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #000;
 }
 
-/* Header amarillo con imagen centrada */
+/* HEADER */
 header {
-  background-color: #f6f665;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  text-align: center;
+    background-color: #F9F871; /* Amarillo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #000;
-  text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 header img {
-  height: 80px;
+    height: 60px;
 }
 
-/* Subfranja con texto negro */
+/* SLOGAN */
 p {
-  background-color: #efffa5;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.5rem;
-  border-top: 2px solid #ccc;
-  border-bottom: 2px solid #ccc;
-  margin: 0;
-  position: relative;
+    background-color: #D5FC8D; /* Verde claro */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
 }
+
 
 /* Navegación con menú */
 nav {

@@ -1,36 +1,43 @@
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Encabezado principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #000;
+}
+
+/* HEADER */
 header {
-  background-color: #f5f55f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  text-transform: uppercase;
+    background-color: #F9F871; /* Amarillo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
 }
 
 header h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin: 0 10px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 header img {
-  height: 80px;
+    height: 60px;
 }
 
-/* Texto de bienvenida */
+/* SLOGAN */
 p {
-  text-align: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0;
+    background-color: #D5FC8D; /* Verde claro */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 /* Navegación principal */
