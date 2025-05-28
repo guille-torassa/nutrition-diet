@@ -1,67 +1,81 @@
-/* RESET GENERAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
-    color: #000;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* HEADER */
 header {
-    background-color: #F9F871; /* Amarillo claro */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
+  background-color: #ffff80; /* amarillo claro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  flex-wrap: wrap;
 }
 
-header h1 {
-    font-size: 28px;
-    font-weight: bold;
+.left, .right {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000;
 }
 
-header img {
-    height: 60px;
+.left {
+  text-align: left;
 }
 
-/* SLOGAN */
+.right {
+  text-align: right;
+}
+
+.center-img {
+  max-height: 100px;
+  max-width: 100px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Franja decorativa con mensaje */
 p {
-    background-color: #D5FC8D; /* Verde claro */
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    margin-bottom: 20px;
+  background-color: #e6ffcc; /* verde muy claro */
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
-/* Navegación principal */
 nav {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efffa5;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
+}
+
+nav img {
+  height: 30px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: black;
   font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 8px;
-  background-color: #f0f0f0;
-  transition: background-color 0.3s;
+}
+#menu-principal{
+  display: none;
+}
+#menu-contactos{
+  display: none;
 }
 
-nav a:hover {
-  background-color: #dcdcdc;
-}
+
 
 /* Sección de imágenes de dietas */
 main {
@@ -88,6 +102,7 @@ main img:hover {
 }
 
 main h3 {
-  font-size: 20px;
+  font-size: 60px;
   color: #444;
+  margin: 50%;
 }

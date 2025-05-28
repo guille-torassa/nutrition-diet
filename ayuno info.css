@@ -42,24 +42,23 @@ p {
 }
 
 /* NAVEGACIÓN PRINCIPAL */
-nav:first-of-type {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: #F5F5F5;
-    padding: 10px 0;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efffa5;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
 }
 
-nav:first-of-type a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    font-size: 16px;
+nav img {
+  height: 30px;
 }
 
-nav:first-of-type img {
-    height: 30px;
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 /* FLECHA ATRÁS */

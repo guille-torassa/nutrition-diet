@@ -37,37 +37,33 @@ p {
   margin: 20px 0;
 }
 
-/* Menú principal */
-nav:nth-of-type(1) {
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  padding: 10px 0;
+  background-color: #efffa5;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
 }
 
-nav:nth-of-type(1) img {
-  height: 35px;
+nav img {
+  height: 30px;
 }
 
-nav:nth-of-type(1) a {
+nav a {
   text-decoration: none;
-  color: #333;
+  color: black;
   font-weight: bold;
-  background-color: #e0e0e0;
-  padding: 10px 15px;
-  border-radius: 8px;
 }
 
-/* Flecha atrás */
-nav:nth-of-type(2) {
-  margin-left: 20px;
-  margin-top: 10px;
+/* Estilo para la flecha atrás */
+nav:last-of-type {
+    padding-left: 20px;
+    margin: 10px 0;
 }
 
-nav:nth-of-type(2) img {
-  height: 25px;
+nav:last-of-type img {
+    height: 25px;
 }
 
 /* Encabezado de sección */
@@ -78,33 +74,47 @@ header:nth-of-type(2) h3 {
   margin: 30px 0 10px;
 }
 
-/* Lista vertical de tipos */
-nav:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f5f55f;
-  padding: 30px 0;
-  gap: 15px;
-  margin: 0 100px;
-  border-radius: 12px;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-nav:nth-of-type(3) a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  font-size: 18px;
-  padding: 12px 20px;
-  border: 2px solid black;
-  border-radius: 6px;
-  width: 200px;
-  text-align: center;
-  background-color: white;
-  transition: background-color 0.3s, transform 0.3s;
+header h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
 }
 
-nav:nth-of-type(3) a:hover {
-  background-color: #ddd;
-  transform: scale(1.03);
+/* Primer nav: flecha atrás */
+nav:first-of-type {
+    margin: 10px;
+}
+
+nav:first-of-type img {
+    width: 30px;
+    height: auto;
+}
+
+/* Segundo nav: columna de enlaces */
+nav:nth-of-type(4) {
+    background-color: #f7f746; /* Amarillo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+/* Enlaces de dieta */
+nav:nth-of-type(4) a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align: center;
 }

@@ -3,6 +3,7 @@
 <head>
 <title>Nutrition diet</title>
 <link rel="stylesheet" href="nutri.css">
+<script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -14,17 +15,18 @@
 </header>
 
 <p>Te ayudamos a cuidarte</p>
-<nav>
-     <img src="imagenes home/imagen menu.png" alt="logo menu">
+<nav> 
+    <button type="button" onclick="mostrarmenu()"> <img src="imagenes home/imagen menu.png" alt="logo menu"> </button>
+     <div id="menu-principal">
           <a href="tipos.html">tipos</a>
                <a href="Recetas.html">recetas</a>
           
                <a href="ayuda.html">ayuda</a>
      
-               <a href="contactos">contactos</a>
-          
+               <button onclick="mostrarcontacto()">contactos</button>
+          </div>
 </nav>
-<nav>
+<nav id="menu-contactos">
      <a href="https://nutricionvibra.com.ar/?gad_source=1&gad_campaignid=21742272205&gbraid=0AAAAAowbqMOnmhLgdlJKsv1ZoE2sTMpqr&gclid=EAIaIQobChMIzcbqg5e3jQMVIkBIAB0k-DtPEAAYASAAEgJAAPD_BwE">cba</a>
      <a href="https://www.vivianalachernutricionista.com/?gad_source=1&gad_campaignid=22242230560&gbraid=0AAAAADiCmnHIMwMvW7rMAKZSpFsXyDWTV&gclid=EAIaIQobChMIptTtnpe3jQMVc1VIAB2z0xhbEBAYASAAEgLQSfD_BwE">buenos aires</a>
       <a href="https://linktr.ee/nt.nutricion">mendoza</a>
@@ -60,10 +62,13 @@
           <img src="imagenes home/logo vegetariano.jpg" alt="vegetariano">
           </a>
      </div>
+     
+</main>
+<nav>
      <div>
           <h3>¿No sabes cual hacer?</h3>
      </div>
-</main>
+</nav>
 <nav>
      <a href="https://www.form-qr-code-generator.com/es?utm_source=google+ads&utm_medium=cpc&utm_campaign=free+keywords&gad_source=1&gad_campaignid=22305849962&gbraid=0AAAAA-43JTiVgek6PaYmnMujjCjjyMld9&gclid=EAIaIQobChMInrrC14q3jQMVCGdIAB2tbC9PEAAYAiAAEgJGR_D_BwE">responde al cuestionario</a>
 </nav>

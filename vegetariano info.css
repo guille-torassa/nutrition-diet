@@ -30,9 +30,9 @@ header img {
     height: 60px;
 }
 
-/* SLOGAN */
+
 p {
-    background-color: #D5FC8D; /* Verde claro */
+    background-color: #D5FC8D; 
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -42,27 +42,26 @@ p {
 
 
 /* MENÚ DE NAVEGACIÓN PRINCIPAL */
-nav:first-of-type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background-color: #F5F5F5;
-    padding: 10px 0;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #efffa5;
+  padding: 0.3rem 1rem;
+  gap: 1rem;
 }
 
-nav:first-of-type img {
-    height: 30px;
+nav img {
+  height: 30px;
 }
 
-nav:first-of-type a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #000;
-    font-size: 16px;
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-
 /* FLECHA ATRÁS */
+
 nav:last-of-type {
     padding-left: 20px;
     margin: 10px 0;
