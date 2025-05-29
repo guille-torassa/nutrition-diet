@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encuesta de Dietas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: none;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="preguntas">
+        <form id="encuesta">
+            <fieldset>
+                <legend>1-¿Cuál es su objetivo principal?</legend>
+                <input id="objetivo1" type="radio" name="objetivo" value="musculo">
+                <label for="objetivo1">Aumentar masa muscular</label><br>
+                <input id="objetivo2" type="radio" name="objetivo" value="peso">
+                <label for="objetivo2">Bajar de peso</label><br>
+                <input id="objetivo3" type="radio" name="objetivo" value="no_maltrato">
+                <label for="objetivo3">Evitar el maltrato animal</label><br>
+                <input id="objetivo4" type="radio" name="objetivo" value="no_maten">
+                <label for="objetivo4">Evitar que maten animales</label><br>
+                <input id="objetivo5" type="radio" name="objetivo" value="gluten">
+                <label for="objetivo5">Evitar el gluten / mejorar digestión</label><br>
+            </fieldset>
+            <button type="button" onclick="enviarEncuesta()">Resultado</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function enviarEncuesta() {
+            const form = document.getElementById("encuesta");
+            const resultado = document.getElementById("resultado");
+            const objetivo = form["objetivo"].value;
+
+            let dieta = "";
+
+            switch(objetivo) {
+                case "musculo":
+                    dieta = "💪 Dieta Proteica: Ideal para aumentar masa muscular con alto contenido de proteínas.";
+                    break;
+                case "peso":
+                    dieta = "🔥 Podés optar por: Ayuno Intermitente o Dieta Keto para bajar de peso.";
+                    break;
+                case "no_maltrato":
+                    dieta = "🌱 Dieta Vegana: 100% libre de productos de origen animal.";
+                    break;
+                case "no_maten":
+                    dieta = "🥗 Dieta Vegetariana: Sin carnes, respetuosa con los animales.";
+                    break;
+                case "gluten":
+                    dieta = "🚫 Dieta Sin TACC: Evita el gluten, ideal para celíacos o con sensibilidad al gluten.";
+                    break;
+                default:
+                    dieta = "Por favor, seleccioná una opción.";
+            }
+
+            resultado.textContent = dieta;
+        }
+    </script>
+</body>
+</html>

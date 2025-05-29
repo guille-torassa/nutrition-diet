@@ -5,7 +5,7 @@
      <link rel="stylesheet" href="recetas.css">
     <script type="text/javascript" src="recetas.js"></script>
 </head>
-<body>
+<body onload="mostrarrecetas()">
     <header>
      <h1>empeza por </h1>
      <img src="imagenes home/imagen final.png" alt="logo dieta">
@@ -16,11 +16,9 @@
 <nav>
       <button type="button" onclick="mostrarmenu()"> <img src="imagenes home/imagen menu.png" alt="logo menu"></button>
       <div id="menu-principal">
-             <a href="tipos.htlm">tipos</a>
-               <a href="recetas.htlm">recetas</a>
-          
-               <a href="ayuda">ayuda</a>
-     
+        <a href="index.html">home</a>
+             <a href="tipos.html">tipos</a>
+               <a href="recetas.html">recetas</a>
              <button onclick="mostrarcontacto()">contactos</button>
              </div>
           
@@ -35,18 +33,34 @@
       <a href="http://www.nutricionistaencordoba.com/">san juan</a>
       <a href="https://nutrihouse.com.ar/landing/?gad_source=1&gad_campaignid=22557258427&gbraid=0AAAAA_nUa2feYwHwHTv1-Z626sRQdWSxA&gclid=EAIaIQobChMI8OW415i3jQMVX1NIAB3yGTZfEAAYASAAEgKFOPD_BwE">online</a>
 </nav>
-<nav>
+
+<nav class="flecha">
     <a href="index.html">
         <img src="imagenes home/flecha atras.png" alt="flecha atras">
     </a>
 </nav>
 
-<nav>
-<img src="imagenes home/imagen  barra d busqueda.png" alt="barra de busqueda">
- <a href="https://cookpad.com/ar/buscar/dieta%20keto">Recetas keto</a>
- <a href="https://cookpad.com/ar/buscar/hipocaloricas">Recetas hipocalorica</a>
- <a href="https://www.directoalpaladar.com/recetario/13-recetas-veganas-ricas-proteinas-vegetales-para-celebrar-dia-mundial-veganismo">Recetas veganas</a>
-<a href="https://cookpad.com/ar/buscar/vegetarianas">Recetas vegetarianas</a>
-<a href="https://cookpad.com/ar/buscar/algo%20facil%20para%20el%20mate%20sin%20tacc">Recetas sin tacc</a>
-</nav>
+<form>
+<select name="dieta" id="dieta" onclick="filtrarrecetas(this.value, tipo.value)">
+<option value="vegetariana">vegetariana</option>
+<option value="keto">keto</option>
+<option value="vegano">vegano</option>
+<option value="sin tacc">sin tacc</option>
+<option value="todas">todas</option>
+</select>
 
+<select name="tipo" id="tipo" onclick="filtrarrecetas(dieta.value,this.value)">
+    <option value="desayuno/merienda">desayuno/merienda</option>
+    <option value="almuerzo/cena">almuerzo/cena</option>
+    <option value="cualquier tipo">cualquier tipo</option>
+</select>
+ </form>
+
+<main id="listado-recetas">
+
+
+</main>
+
+</body>
+
+</html>
