@@ -91,11 +91,13 @@ main div {
 }
 
 main img {
-  width: 150px;
+  width: 200px;
   height: auto;
   border-radius: 12px;
   transition: transform 0.3s;
 }
+
+
 
 main img:hover {
   transform: scale(1.05);
@@ -104,5 +106,32 @@ main img:hover {
 main h3 {
   font-size: 60px;
   color: #444;
-  margin: 50%;
+  margin: 80%;
+}
+.cuestionario-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.boton-texto {
+  background-color: #d0d561; /* color similar al verde lima */
+  border-radius: 50px;
+  display: inline-block;
+  padding: 15px 30px;
+  margin-bottom: 10px;
+}
+
+.boton-texto h3 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cuestionario-link {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
